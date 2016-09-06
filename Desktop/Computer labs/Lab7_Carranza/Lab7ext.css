@@ -1,0 +1,52 @@
+ul {
+	list-style-image:url('purplesquare.gif');
+}
+ 
+ol {
+	list-style:lower-alpha;
+}
+ 
+dl {
+	/*color:white;*/
+}
+
+p {
+ 	color: #33cc33;
+}
+
+h2 {
+ 	color:#0099ff;
+}
+ 
+#lab {
+	/*color:white;*/
+}
+ 
+#me {
+ 	font-family: Impact, Charcoal, sans-serif;
+ 	text-align:right;
+}
+#jack {
+ 	font-family: "Courier New", Courier, monospace;
+ 	
+ }
+#mike {
+ 	font-family: "Comic Sans MS", cursive, sans-serif;
+ 
+ }
+#marist:link{
+	color:red;
+}
+
+#marist:hover{
+	color:black;
+}
+
+#marist:active{
+	color:blue;
+}
+table, th, td {
+    border: 5px solid black;
+    padding:10px;
+}
+ 

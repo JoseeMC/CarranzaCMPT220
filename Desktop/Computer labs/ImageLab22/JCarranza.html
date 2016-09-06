@@ -1,0 +1,26 @@
+<html>
+<head>
+
+</head>
+<body>
+<script>
+function fun1() {
+	var image = document.getElementById('image');
+	if (image.getAttribute('src') == "chair.jpg") {
+		image.src = "cup.jpg";
+	} else if (image.getAttribute('src') == "cup.jpg") {
+		image.src = "desk.jpg";
+	} else if (image.getAttribute('src') == "desk.jpg") {
+		image.src = "mac.png";
+	} else if (image.getAttribute('src') == "mac.png") {
+		image.src = "thinkpad.jpg";
+	} else {
+		image.src = "chair.jpg";
+	}
+}
+
+</script>
+
+<img id="image" src="chair.jpg" onclick="fun1()" width="500px" height="500px" />
+</body>
+</html>

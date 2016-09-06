@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Jose Carranza Final</title>
+<style>
+ 	td,table,th{
+ 	border:1px solid ;
+ 	width:800px;
+ 	text-align: center;
+ 	}
+
+ </style>
+</head>
+<body>
+
+<script>
+var tableArray = [["Cup", "$15", "<img src='cup.jpg' width='60' height='40' />"],
+				 ["Thinkpad", "$799", "<img src='thinkpad.jpg' width='60' height='40' />"],
+				 ["Desk", "$30", "<img src='desk.jpg' width='60' height='40' />"],
+				 ["Chair", "$35", "<img src='chair.jpg' width='60' height='40' />"],
+				 ["Macbook", "$1299", "<img src='mac.png' width='60' height='40' />"]];
+
+document.write("<table><tr><th>Product</th><th>Price</th><th>Image</th></tr>");
+
+for (var i = 0; i < tableArray.length; i++) {
+	document.write("<tr>");
+	for (var x = 0; x < tableArray[i].length; x++) {
+		document.write("<td>" + tableArray[i][x] + "</td>");
+	}
+	document.write("</tr>");
+}
+
+document.write("</table>");
+</script>
+
+
+</body>
+</html>

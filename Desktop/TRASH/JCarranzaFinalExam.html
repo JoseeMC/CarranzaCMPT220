@@ -1,0 +1,35 @@
+
+<html>
+<head>
+<script>
+	function carSelection() {
+		var savings = parseInt(document.getElementById("savings").value);
+		var income = parseInt(document.getElementById("income").value);
+		var total = income + savings;
+		if (isNaN(savings) || isNaN(income)) {
+	 		alert("Please Insert a number.");
+		} else if (savings < 0 || income < 0) {
+	 		alert("Please input a positive number.");
+		} else if (total < 1000) {
+			alert("We recommend you buy a Honda.");
+		} else if (total >= 1000 && total < 1500) {
+			alert("We recommend you buy a BMW.");
+		} else if (total >= 1500 && total < 2500) {
+			alert("We recommend you buy a Mercedes.");
+		} else if (total >= 2500) {
+			alert("You can buy them all.");
+		}
+	}
+</script>
+</head>
+<body>
+<h1>Affordable car selection for you!!!</h1>
+<h3> In order to get our service </h3>
+<form id="myForm">
+  enter your savings: <input type="text" name="savings" id="savings" /><br>
+  enter your income: <input type="text" name="income" id="income" /><br>
+  <input type="submit" value="View our suggestion" onclick="carSelection();" />
+</form>
+
+</body>
+</html></html>

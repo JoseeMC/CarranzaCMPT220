@@ -1,0 +1,176 @@
+
+
+<html>
+<head>
+<title> Final Project Phase I</title>
+<link rel="stylesheet" type="text/css" href="colors.css">
+
+<script>
+//Function 1
+function greeting() {
+	var date = new Date();
+	var options = {
+		weekday: "long", year: "numeric", month: "short",
+		day: "numeric", hour: "2-digit", minute: "2-digit"
+	};
+	alert("Greetings, it is currently: " + date.toLocaleTimeString("en-us", options));
+}
+
+//Function 2
+function bigImg(x) {
+    x.style.height = "120%";
+    x.style.width = "36%";
+}
+
+function normalImg(x) {
+    x.style.height = "100%";
+    x.style.width = "30%";
+}
+
+//Function 3
+function cycle() {
+	if (document.getElementById("mainbanner").getAttribute("src") == "rotunda.jpg") {
+		document.getElementById("mainbanner").src = "maristhudson.jpg";
+	} else {
+		document.getElementById("mainbanner").src = "rotunda.jpg";
+	}
+	setTimeout(cycle, 5000);
+}
+setTimeout(cycle, 5000);
+
+//Fucntion 4
+function daysTill(year,month,day) {
+	var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
+	var secondDate = new Date(year,month-1,day);
+	var days = (firstDate - secondDate)/(oneDay);
+	days = Math.round(Math.abs(days));
+	document.getElementById("daysTillSchool").innerHTML = days;
+}
+
+
+
+</script>
+</head>
+
+<body onload="greeting();">
+<p id="grey" style="text-align: right; font-size: 12px;">
+day till school starts: <span id="daysTillSchool"></span>
+<script>daysTill(2016,8,29);</script>
+</p>
+<div id="header">
+<h1><i id="red"> Welcome to the <img src="marist.png" alt="Red Foxes" height="70px" width="150px"> Market </i></h1>
+</div>
+<div id="navbar">
+	<div class="navele"> <a href="http://www.marist.edu">  Homepage</a> </div>
+	<div class="navele"> <a href="http://marist.bncollege.com/webapp/wcs/stores/servlet/SubcategoryView?parentCatId=40360&categoryId=40381&catalogId=10001&langId=-1&parentSubCatIdFlag=true&storeId=26554&topCatId=40000"> Sportswear</a> </div>
+	<div class="navele"> <a href="https://www.marist.edu/academics/calendars.html#CAL20152016"> Calendar </a> </div>
+	<div class="navele"> <a href="http://www.engadget.com/"> Technology</a> </div>
+	<div class="navele"> <a href="http://www.ebay.com/sch/i.html?_from=R40&_trksid=p2050601.m570.l1313.TR0.TRC0.H0.XMarist+apparel.TRS0&_nkw=Marist+apparel&_sacat=0"> Apparel </a> </div>
+
+</div>
+<br />
+
+<br/>
+<div style="width:100%; height:3px; background-color:grey"> </div>
+
+<div id="container">
+	<div id="leftbox">  <img src="Maristshirt.jpg" align="left" alt="Marist hat" width="55%" height="100%"/>
+	 <p class="text" id="font25"><u>Summer is right around the corner</u><br/> Here at the Marist Market <br/> We have the <b>COOLEST</b> stuff around</p>
+	 </div>
+	<div id="centerbox"> </div>
+	<div id="rightbox"><img src="ebay.png" alt="ebay" width="100%" height="60%" align="left">
+	 
+	 <p class="text" id="ACC"> Have an ebay account? <br/> You can purchase Marist Apparel there  </p>
+	 </div>
+</div>
+<div id="master">
+
+	<div id="divleft">
+	
+		<div id="left1">
+		<img src="adidas.jpg" alt="adidas" height="100%" width="100%" align="left"/>
+		
+		</div>
+		
+		<div id="left2">
+		<img src="kfc.jpg" alt="Kentucky Fried Chicken" width="100%" height="40%" align="top"/>
+		 <img src="DD.jpg" alt="Everything runs on Dunkin" width="100%" height="60%" align="bottom"/>
+		
+		</div>
+	
+	</div>
+
+
+
+	<div id="middlediv">
+	
+		<div id="center1">
+		<img id="mainbanner" src="rotunda.jpg" alt="Marist beach" width="100%" height="73%" />
+		<p class="text" id="font20"> Marist has some great deals this season </br></p>
+		</div>
+		
+		
+		<div class="center2">
+		<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="sweater.jpg" alt="Marist sweater" align="left" height="100%" width="30%"/>
+		<p class="text" id="font25" > Winter season is over <br/><u><i> 25% OFF ALL OUTERWEAR AND 10% OFF ALL SWEATERS  </i></u><br/> Purchase your gear today! </p>
+		</div>
+		
+		<div class="center2">
+		<img src="macbook.jpg" alt="macbook-pro laptop" align="left" height="100%" width="30%"/>
+		<p class="text" id="font20"> Order your Laptop NOW! <i> This <b>Hotseller</b> WAS </i><br/> <strike> $1000.00 </strike> <br/> now $800.00 </p>
+		</div>
+		
+		<div class="center2">
+		<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="maristfootballshirt.jpg" alt="marist football" align="left" width="30%" height="100%"/>
+		<p class="text" id="font20">  Support the RED FOX Football Team! <br/> <b>Hotseller</b>... <br/> <i><u>40% OFF</u></i> with an additional Apparel Purchase </p>
+		</div>
+		
+		<div class="center2">
+		<img src="textbooks.jpg" alt="school textbooks" align="left" height="100%" width="30%"/>
+		<p class="text" id="font25"> Are you tired of paying extra on books?  <br/> Stop on by the Marist Store <br/>Sale on Books <i><u>10% OFF</u></i></p> 
+		</div>
+		
+		<div class="center2">
+		<img src="mascot.jpg" alt="Marist Mascot" height="100%" width="20%" align="left"/>
+		<p class="text" id="spirit"> Is there a need for school spirit at home? <br/> Purchase Shooter and show our school's spirit<br/><i><u> 5% OFF</u></i> </p>
+		
+		</div>
+	
+	</div>
+	
+	
+	
+	<div id="divright">
+	
+		<div class="right1">
+		<img src="login.png" alt="login" align="left" height="100%" width="100%"/>
+		
+		</div>
+		
+		<div class="right1">
+		<p style="color:red; text-align:center; font-size:24px; font-family:Georgia, serif"> 
+		Login to your Marist Account to recieve outstanding deals!<br/><br/>
+		 <b>*Note*</b> If this is your first time logging in, use the <i>Register</i> login below</p>
+		
+		</div>
+		
+		<div class="right1">
+		<img src="Register.png" alt="REGISTER" align="top" width="100%" height="20%"/>
+		<img src="Untitled-1.png" alt="Username:Password" width="100%" height="80%"/>
+		
+		</div>
+		
+		
+		<div id="right2">
+		<img src="apple.jpg" alt="Apple think different" width="100%" height="50%"/>
+		<img src="space.jpg" alt="adidas space" width="100%" height="30%"/>
+		<img src="checkout.png" alt="Checkout" width="100%" height="20%" align="bottom"/>
+		</div>
+	
+	</div>
+
+</div>
+
+</body>
+
+</html> 
