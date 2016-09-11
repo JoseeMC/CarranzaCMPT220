@@ -1,0 +1,20 @@
+9 pts
+
+Jose,
+
+- Congratulations on passing the judge Kattis!
+
+- Good style!
+
+However, 
+
+- The comment in the header does not correctly describe the function of your
+  program. 
+
+- Please read the style guidelines to make sure you understand them. Do not
+  hesitate to ask any questions.
+
+
+Peace,
+
+- Dr. Rivas
