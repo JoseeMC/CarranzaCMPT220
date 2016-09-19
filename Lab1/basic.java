@@ -12,8 +12,9 @@
 */
 
 import java.util.Scanner;
+// class names should start with capital letter
 public class basic {
- 
+// incorrect indentation... it should be two spaces! 
     public static void main(String[] args) {
  
         System.out.println("     J        A       V     V       A       \n");

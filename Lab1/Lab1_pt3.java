@@ -14,6 +14,7 @@
 import java.util.Scanner;
 
 public class Lab1_pt3 {
+// == you are using tabs!!!
 	public static void main (String [] args){
 		Scanner input = new Scanner (System.in);
 	
@@ -29,7 +30,8 @@ public class Lab1_pt3 {
 
 
 	
-
+// == what is this? this is not what you are supposed to output! read the
+// problem, Jose.
 		System.out.println("If your subtotal is $" + subtotal + ",would you like to leave a tip?");
 	    double gratuity = input.nextDouble();
 	    
