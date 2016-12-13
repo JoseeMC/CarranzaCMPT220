@@ -1,0 +1,18 @@
+31 pts
+
+The project simply writes holiday text to standard output. The idea has good
+intentions. 
+
+However, there are some issues...
+Writeup:
+- There are typos in the document. -1pt
+
+- It does not follow the structure required. Abstract, Introduction, etc. -1pt
+
+Code:
+- There is incorrect indentation. -1pt
+
+- You are using tabs. -1pt
+
+Overall:
+- The project is extremely easy. You can do a lot better than this. -5pts
